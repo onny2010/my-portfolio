@@ -211,8 +211,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  /* background: rgba(135, 70, 124, 0); */
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero-bg1.jpg") top center;
+  background-repeat: no-repeat;
   opacity: 0.5;
   position: absolute;
   bottom: 0;
@@ -267,6 +267,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
 }
+
 
 
 /*--------------------------------------------------------------
@@ -434,6 +435,29 @@ section {
   border: 2px solid #1f5297;
 }
 
+.resume .resume-details{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 10px;
+  background-color: rgb(150, 226, 226) ;
+  color: rgb(5, 15, 15);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: .3s ease background-color ;
+}
+
+.resume .resume-details:hover{
+  background-color: rgb(17, 43, 65);
+color: whitesmoke;
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -448,6 +472,11 @@ section {
   background: #fff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info .map iframe{
+ max-width: 350px;
+ width: 100%;
 }
 
 .contact .info i {
@@ -555,6 +584,8 @@ color: whitesmoke;
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -597,93 +628,6 @@ color: whitesmoke;
   }
   .breadcrumbs ol li {
     display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-container {
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-carousel {
-  position: relative;
-  z-index: 1;
-}
-
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
-  margin-top: 5px;
-  text-align: left;
-}
-
-.portfolio-details .portfolio-details-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 10px 0 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #149ddd !important;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  position: absolute;
-  right: 0;
-  bottom: -70px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 50px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  width: 50%;
-  font-size: 26px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-@media (max-width: 768px) {
-  .portfolio-details .portfolio-description h2 {
-    width: 100%;
-  }
-  .portfolio-details .portfolio-info {
-    position: static;
-    margin-top: 30px;
   }
 }
 
